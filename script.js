@@ -65,12 +65,17 @@ $(document).on("change" , "#color" , function(){
 });
 
 // When grid size changes, change grid size
-$(document).on("change", "#slider", function() {
+$(document).on("change", "#slider", "#color", function() {
     let slider = $(this).val();
     sliderLabel.innerText = slider;
 
     $('#container').find(".grid").remove();
     createGrid(slider);
+
+    let color = document.getElementById("color").value;
+    $(".grid").mouseover(function() {
+        $(this).css("background-color", color);
+    });
 });
 
 // Loads 16x16 grid on load with pen color and slider size
