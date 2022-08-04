@@ -6,5 +6,8 @@ An online etch-a-sketch to draw on with different grid sizes and colors!
 * JavaScript
 * jQuery
 
+## Frameworks
+* jQuery
+
  ![Screenshot](etch-a-sketch.png)
 
